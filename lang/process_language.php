@@ -13,6 +13,7 @@
         $stmt = $pdo->prepare("SELECT navbar_id, szoveg FROM navbar_szoveg WHERE language_id = (SELECT id FROM languages
         WHERE language_code = ?);");
         $stmt->execute([$selected_language]);
+        
     } catch(PDOException $e) {
         die("Hiba a lekérdezés során: " . $e->getMessage());
     }

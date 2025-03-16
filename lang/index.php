@@ -50,13 +50,12 @@
             </li>
             <li class="nav-item dropdown">
                 <form method="get">
-                    <select name="language" id="dropdown-select"  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                        <select name="language" id="dropdown-select"  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <option class="dropdown-item" value="hu">Magyar</option>
                                 <option class="dropdown-item" value="en">Angol</option>
                                 <option class="dropdown-item" value="de">Német</option>
-                            </div>
-                    </select>
+                        </select>
+                    
                 </form>
             </li>
         </ul>
@@ -72,7 +71,7 @@
 
                 // ha változik a selectált érték
                 var selectedLanguage = $(this).val();
-                console.log("Kiválaszottad: ",selectedLanguage);
+                console.log("Kiválaszottad: ", selectedLanguage);
                 $.ajax({
 
                     // ajax-al átküldjük a kiválasztott értéket (hu,en,de)

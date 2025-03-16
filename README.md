@@ -1,6 +1,6 @@
 # navbar_translate_php
 This small project demonstrates a more advanced way of translating website. 
-Navigation bar translated to the selected language from mysql database. Using PHP, JQuery, Bootstrap.
+Navigation bar translated to the selected language from mysql database using PHP, JQuery.
 
 ## First state - In Hungarian the default language of the website
 ![alt text](image.png)

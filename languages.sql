@@ -51,24 +51,24 @@ INSERT INTO `languages` (`id`, `language`, `language_code`) VALUES
 CREATE TABLE `navbar` (
   `id` int(11) NOT NULL,
   `nev` varchar(20) NOT NULL,
-  `language_id` int(11) DEFAULT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- A tábla adatainak kiíratása `navbar`
 --
 
-INSERT INTO `navbar` (`id`, `nev`, `language_id`) VALUES
-(1, 'beteg', NULL),
-(2, 'kivancsi', NULL),
-(3, 'tudastar', NULL),
-(4, 'eredmenyek', NULL),
-(5, 'rolunk', NULL),
-(6, 'adatvedelem', NULL),
-(7, 'szakembereknek', NULL),
-(8, 'magyar', NULL),
-(9, 'angol', NULL),
-(10, 'német', NULL);
+INSERT INTO `navbar` (`id`, `nev`) VALUES
+(1, 'beteg'),
+(2, 'kivancsi'),
+(3, 'tudastar'),
+(4, 'eredmenyek'),
+(5, 'rolunk'),
+(6, 'adatvedelem'),
+(7, 'szakembereknek'),
+(8, 'magyar'),
+(9, 'angol'),
+(10, 'német');
 
 -- --------------------------------------------------------
 
